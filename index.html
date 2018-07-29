@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>paper js prac1</title>
+	<script type="text/javascript" src="node_modules/paper/dist/docs/assets/js/paper.js"></script>
+	<script type="text/javascript" src="node_modules/paper/dist/paper-full.js"></script>
+	<script src="node_modules/paper/dist/docs/assets/js/jquery.js"></script>
+	<script type="text/paperscript" canvas = "canvas" >
+       var raster = new Raster('pii');
+		// Move the raster to the center of the view
+		raster.position = view.center;
+
+		// Scale the raster by 50%
+		raster.scale(1.0);
+
+		// Rotate the raster by 45 degrees:
+		raster.rotate(45);
+    </script>
+</head>
+<body>
+	<canvas id="canvas" width="805" height="806" data-paper-scope = "1" ></canvas>
+	<img id="pii" width="222" height="222" " src="public/prac1.jpg">
+</body>
+</html>
